@@ -22,6 +22,9 @@ public:
    */
   TokenHandler ();
 
+
+  TokenHandler (InitialConfigurator ic);
+
   /**
    * Empty Destructor
    */
@@ -40,7 +43,7 @@ public:
 
   // Public attribute accessor methods
   //  
-
+  void checkPassTest();
 
 protected:
 
@@ -55,7 +58,7 @@ protected:
   //  
 
   // Protected Methods
-  void checkPass();
+  bool checkPass(std::string pass);
 
 private:
 
@@ -65,12 +68,13 @@ private:
   // Private attributes
   //  
   std::string configPass;
+  //static bool configCreated;
 
   // Private attribute accessor methods
   //  
 
   // Other Private Methods
-  std::string getConfigPass(InitialConfigurator ic);
+  void getConfigPass(InitialConfigurator ic);
 
 
 };
