@@ -11,7 +11,9 @@ InitialConfigurator::~InitialConfigurator () { }
 //  
 // Methods
 //  
-
+void InitialConfigurator::statusCheck() {
+  std::cout << "It works!" << std::endl;
+}
 
 // Accessor methods
 //  

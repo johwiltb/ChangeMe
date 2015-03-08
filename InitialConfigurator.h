@@ -3,6 +3,7 @@
 #define INITIALCONFIGURATOR_H
 
 #include <string>
+#include <iostream>
 
 /**
   * class InitialConfigurator
@@ -38,9 +39,9 @@ public:
   //  
 
 
-  // Public attribute accessor methods
+  // Other public methods
   //  
-
+  void statusCheck();
 
 protected:
 
