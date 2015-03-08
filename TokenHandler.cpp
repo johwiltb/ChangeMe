@@ -11,13 +11,15 @@ TokenHandler::~TokenHandler () { }
 //  
 // Methods
 //  
+std::string TokenHandler::getConfigPass(InitialConfigurator ic) {
+  return ic.passInitPassword();
+}
 
+void TokenHandler::checkPass(){
+
+}
 
 // Accessor methods
-//  
-
-
-// Other methods
 //  
 
 

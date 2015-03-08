@@ -3,7 +3,7 @@
 #define TOKENHANDLER_H
 
 #include <string>
-
+#include "InitialConfigurator.h"
 /**
   * class TokenHandler
   * 
@@ -50,22 +50,12 @@ protected:
   // Protected attributes
   //  
 
-public:
-
 
   // Protected attribute accessor methods
   //  
 
-protected:
-
-public:
-
-
-  // Protected attribute accessor methods
-  //  
-
-protected:
-
+  // Protected Methods
+  void checkPass();
 
 private:
 
@@ -74,23 +64,13 @@ private:
 
   // Private attributes
   //  
-
-public:
-
+  std::string configPass;
 
   // Private attribute accessor methods
   //  
 
-private:
-
-public:
-
-
-  // Private attribute accessor methods
-  //  
-
-private:
-
+  // Other Private Methods
+  std::string getConfigPass(InitialConfigurator ic);
 
 
 };

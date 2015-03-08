@@ -3,13 +3,13 @@
 #define SCANNER_H
 
 #include <string>
-
+#include "TokenHandler.h"
 /**
   * class Scanner
   * 
   */
 
-class Scanner
+class Scanner : public TokenHandler
 {
 public:
 

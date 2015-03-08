@@ -4,7 +4,9 @@
 
 #include <string>
 #include <iostream>
-
+#include <sstream>
+#include <iomanip>
+#include <openssl/sha.h>
 /**
   * class InitialConfigurator
   * 
@@ -42,6 +44,8 @@ public:
   // Other public methods
   //  
   void statusCheck();
+  std::string passInitPassword();
+
 
 protected:
 
@@ -51,22 +55,11 @@ protected:
   // Protected attributes
   //  
 
-public:
-
-
   // Protected attribute accessor methods
   //  
 
-protected:
-
-public:
-
-
-  // Protected attribute accessor methods
+  // Protected other methods
   //  
-
-protected:
-
 
 private:
 
@@ -75,24 +68,14 @@ private:
 
   // Private attributes
   //  
-
-public:
-
+  std::string InitConfigPass;
 
   // Private attribute accessor methods
   //  
 
-private:
-
-public:
-
-
-  // Private attribute accessor methods
+  // Private other methods
   //  
-
-private:
-
-
+  void setInitConfigPass();
 
 };
 
