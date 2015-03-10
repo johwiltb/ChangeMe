@@ -1,24 +1,24 @@
 #include "TokenHandler.h"
 static bool configCreated = false;
+static std::string configPass;
 
 // Constructors/Destructors
 //  
-TokenHandler::TokenHandler() {
-}
 
-TokenHandler::TokenHandler (InitialConfigurator ic) {
+TokenHandler::TokenHandler () {
   if (configPass.empty())
-    getConfigPass(ic);
+    getConfigPass();
 }
-
 TokenHandler::~TokenHandler () { }
 
 //  
 // Methods
 //  
-void TokenHandler::getConfigPass(InitialConfigurator ic) {
+void TokenHandler::getConfigPass() {
   while (!configCreated) {
-   configPass = ic.passInitPassword();
+   InitialConfigurator* ic = new InitialConfigurator;
+   configPass = ic->passInitPassword();
+   delete ic;
    configCreated = true;
   }
 }

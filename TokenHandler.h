@@ -22,9 +22,6 @@ public:
    */
   TokenHandler ();
 
-
-  TokenHandler (InitialConfigurator ic);
-
   /**
    * Empty Destructor
    */
@@ -67,14 +64,14 @@ private:
 
   // Private attributes
   //  
-  std::string configPass;
+  //std::string configPass;
   //static bool configCreated;
 
   // Private attribute accessor methods
   //  
 
   // Other Private Methods
-  void getConfigPass(InitialConfigurator ic);
+  void getConfigPass();
 
 
 };

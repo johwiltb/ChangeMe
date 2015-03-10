@@ -8,9 +8,7 @@ int main()
 {
   cout << "Welcome to the beginning..." << endl;
   cout << "This is where it will all begin..." <<endl;
-  static InitialConfigurator* initConf = new InitialConfigurator();
-  initConf->statusCheck();
-  TokenHandler* th = new TokenHandler(*initConf);
+  TokenHandler* th = new TokenHandler();
   th->checkPassTest();
   return 0;
 }
